@@ -1,0 +1,224 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\PC-Chan\\source\\repos\\Asistencias\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{64671BAB-C135-4173-A37E-A8FA652E2B93}|Asistencias\\Asistencias.csproj|c:\\users\\pc-chan\\source\\repos\\asistencias\\asistencias\\controllers\\sesioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64671BAB-C135-4173-A37E-A8FA652E2B93}|Asistencias\\Asistencias.csproj|solutionrelative:asistencias\\controllers\\sesioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64671BAB-C135-4173-A37E-A8FA652E2B93}|Asistencias\\Asistencias.csproj|c:\\users\\pc-chan\\source\\repos\\asistencias\\asistencias\\repository\\sesionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64671BAB-C135-4173-A37E-A8FA652E2B93}|Asistencias\\Asistencias.csproj|solutionrelative:asistencias\\repository\\sesionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64671BAB-C135-4173-A37E-A8FA652E2B93}|Asistencias\\Asistencias.csproj|c:\\users\\pc-chan\\source\\repos\\asistencias\\asistencias\\interface\\isesionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64671BAB-C135-4173-A37E-A8FA652E2B93}|Asistencias\\Asistencias.csproj|solutionrelative:asistencias\\interface\\isesionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64671BAB-C135-4173-A37E-A8FA652E2B93}|Asistencias\\Asistencias.csproj|c:\\users\\pc-chan\\source\\repos\\asistencias\\asistencias\\entitys\\sesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64671BAB-C135-4173-A37E-A8FA652E2B93}|Asistencias\\Asistencias.csproj|solutionrelative:asistencias\\entitys\\sesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64671BAB-C135-4173-A37E-A8FA652E2B93}|Asistencias\\Asistencias.csproj|c:\\users\\pc-chan\\source\\repos\\asistencias\\asistencias\\entitys\\asistencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64671BAB-C135-4173-A37E-A8FA652E2B93}|Asistencias\\Asistencias.csproj|solutionrelative:asistencias\\entitys\\asistencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64671BAB-C135-4173-A37E-A8FA652E2B93}|Asistencias\\Asistencias.csproj|c:\\users\\pc-chan\\source\\repos\\asistencias\\asistencias\\repository\\asistenciarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64671BAB-C135-4173-A37E-A8FA652E2B93}|Asistencias\\Asistencias.csproj|solutionrelative:asistencias\\repository\\asistenciarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64671BAB-C135-4173-A37E-A8FA652E2B93}|Asistencias\\Asistencias.csproj|c:\\users\\pc-chan\\source\\repos\\asistencias\\asistencias\\entitys\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64671BAB-C135-4173-A37E-A8FA652E2B93}|Asistencias\\Asistencias.csproj|solutionrelative:asistencias\\entitys\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64671BAB-C135-4173-A37E-A8FA652E2B93}|Asistencias\\Asistencias.csproj|c:\\users\\pc-chan\\source\\repos\\asistencias\\asistencias\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{64671BAB-C135-4173-A37E-A8FA652E2B93}|Asistencias\\Asistencias.csproj|solutionrelative:asistencias\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64671BAB-C135-4173-A37E-A8FA652E2B93}|Asistencias\\Asistencias.csproj|c:\\users\\pc-chan\\source\\repos\\asistencias\\asistencias\\repository\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64671BAB-C135-4173-A37E-A8FA652E2B93}|Asistencias\\Asistencias.csproj|solutionrelative:asistencias\\repository\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64671BAB-C135-4173-A37E-A8FA652E2B93}|Asistencias\\Asistencias.csproj|c:\\users\\pc-chan\\source\\repos\\asistencias\\asistencias\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64671BAB-C135-4173-A37E-A8FA652E2B93}|Asistencias\\Asistencias.csproj|solutionrelative:asistencias\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64671BAB-C135-4173-A37E-A8FA652E2B93}|Asistencias\\Asistencias.csproj|c:\\users\\pc-chan\\source\\repos\\asistencias\\asistencias\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64671BAB-C135-4173-A37E-A8FA652E2B93}|Asistencias\\Asistencias.csproj|solutionrelative:asistencias\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64671BAB-C135-4173-A37E-A8FA652E2B93}|Asistencias\\Asistencias.csproj|c:\\users\\pc-chan\\source\\repos\\asistencias\\asistencias\\entitys\\requestasistencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64671BAB-C135-4173-A37E-A8FA652E2B93}|Asistencias\\Asistencias.csproj|solutionrelative:asistencias\\entitys\\requestasistencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Sesion.cs",
+              "DocumentMoniker": "C:\\Users\\PC-Chan\\source\\repos\\Asistencias\\Asistencias\\Entitys\\Sesion.cs",
+              "RelativeDocumentMoniker": "Asistencias\\Entitys\\Sesion.cs",
+              "ToolTip": "C:\\Users\\PC-Chan\\source\\repos\\Asistencias\\Asistencias\\Entitys\\Sesion.cs",
+              "RelativeToolTip": "Asistencias\\Entitys\\Sesion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T18:37:46.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SesionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\PC-Chan\\source\\repos\\Asistencias\\Asistencias\\Repository\\SesionRepository.cs",
+              "RelativeDocumentMoniker": "Asistencias\\Repository\\SesionRepository.cs",
+              "ToolTip": "C:\\Users\\PC-Chan\\source\\repos\\Asistencias\\Asistencias\\Repository\\SesionRepository.cs",
+              "RelativeToolTip": "Asistencias\\Repository\\SesionRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T18:37:31.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ISesionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\PC-Chan\\source\\repos\\Asistencias\\Asistencias\\Interface\\ISesionRepository.cs",
+              "RelativeDocumentMoniker": "Asistencias\\Interface\\ISesionRepository.cs",
+              "ToolTip": "C:\\Users\\PC-Chan\\source\\repos\\Asistencias\\Asistencias\\Interface\\ISesionRepository.cs",
+              "RelativeToolTip": "Asistencias\\Interface\\ISesionRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T18:37:15.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SesionController.cs",
+              "DocumentMoniker": "C:\\Users\\PC-Chan\\source\\repos\\Asistencias\\Asistencias\\Controllers\\SesionController.cs",
+              "RelativeDocumentMoniker": "Asistencias\\Controllers\\SesionController.cs",
+              "ToolTip": "C:\\Users\\PC-Chan\\source\\repos\\Asistencias\\Asistencias\\Controllers\\SesionController.cs",
+              "RelativeToolTip": "Asistencias\\Controllers\\SesionController.cs",
+              "ViewState": "AQIAACUAAACAmpmZmZkewC0AAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T18:36:46.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Asistencia.cs",
+              "DocumentMoniker": "C:\\Users\\PC-Chan\\source\\repos\\Asistencias\\Asistencias\\Entitys\\Asistencia.cs",
+              "RelativeDocumentMoniker": "Asistencias\\Entitys\\Asistencia.cs",
+              "ToolTip": "C:\\Users\\PC-Chan\\source\\repos\\Asistencias\\Asistencias\\Entitys\\Asistencia.cs",
+              "RelativeToolTip": "Asistencias\\Entitys\\Asistencia.cs",
+              "ViewState": "AQIAAAIAAADAzMzMzMwJwAkAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T18:09:27.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\PC-Chan\\source\\repos\\Asistencias\\Asistencias\\Entitys\\Usuario.cs",
+              "RelativeDocumentMoniker": "Asistencias\\Entitys\\Usuario.cs",
+              "ToolTip": "C:\\Users\\PC-Chan\\source\\repos\\Asistencias\\Asistencias\\Entitys\\Usuario.cs",
+              "RelativeToolTip": "Asistencias\\Entitys\\Usuario.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAEAtwBsAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T18:06:06.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\PC-Chan\\source\\repos\\Asistencias\\Asistencias\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "Asistencias\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\PC-Chan\\source\\repos\\Asistencias\\Asistencias\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "Asistencias\\Controllers\\UsuarioController.cs",
+              "ViewState": "AQIAAAkAAACAZmZmZmYUwDMAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T18:05:19.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\PC-Chan\\source\\repos\\Asistencias\\Asistencias\\Repository\\UsuarioRepository.cs",
+              "RelativeDocumentMoniker": "Asistencias\\Repository\\UsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\PC-Chan\\source\\repos\\Asistencias\\Asistencias\\Repository\\UsuarioRepository.cs",
+              "RelativeToolTip": "Asistencias\\Repository\\UsuarioRepository.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAawC0AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T18:04:59.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\PC-Chan\\source\\repos\\Asistencias\\Asistencias\\appsettings.json",
+              "RelativeDocumentMoniker": "Asistencias\\appsettings.json",
+              "ToolTip": "C:\\Users\\PC-Chan\\source\\repos\\Asistencias\\Asistencias\\appsettings.json",
+              "RelativeToolTip": "Asistencias\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-28T17:54:05.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AsistenciaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\PC-Chan\\source\\repos\\Asistencias\\Asistencias\\Repository\\AsistenciaRepository.cs",
+              "RelativeDocumentMoniker": "Asistencias\\Repository\\AsistenciaRepository.cs",
+              "ToolTip": "C:\\Users\\PC-Chan\\source\\repos\\Asistencias\\Asistencias\\Repository\\AsistenciaRepository.cs",
+              "RelativeToolTip": "Asistencias\\Repository\\AsistenciaRepository.cs",
+              "ViewState": "AQIAAAcAAAAAmZmZmZkOwBAAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T17:53:48.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PC-Chan\\source\\repos\\Asistencias\\Asistencias\\Program.cs",
+              "RelativeDocumentMoniker": "Asistencias\\Program.cs",
+              "ToolTip": "C:\\Users\\PC-Chan\\source\\repos\\Asistencias\\Asistencias\\Program.cs",
+              "RelativeToolTip": "Asistencias\\Program.cs",
+              "ViewState": "AQIAAAcAAADgzMzMzMwnwBkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T16:05:14.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RequestAsistencia.cs",
+              "DocumentMoniker": "C:\\Users\\PC-Chan\\source\\repos\\Asistencias\\Asistencias\\Entitys\\RequestAsistencia.cs",
+              "RelativeDocumentMoniker": "Asistencias\\Entitys\\RequestAsistencia.cs",
+              "ToolTip": "C:\\Users\\PC-Chan\\source\\repos\\Asistencias\\Asistencias\\Entitys\\RequestAsistencia.cs",
+              "RelativeToolTip": "Asistencias\\Entitys\\RequestAsistencia.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T17:48:07.897Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
