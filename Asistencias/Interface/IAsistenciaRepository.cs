@@ -1,10 +1,14 @@
-﻿using System.Collections.Generic;
+﻿using Asistencias.Entitys;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
-public interface IAsistenciaRepository
+namespace Asistencias.Repositories
 {
-    Task RegistrarAsistencia(Asistencia asistencia);
-    Task<IEnumerable<Asistencia>> ObtenerAsistenciasPorMaestro(int idMaestro);
-    Task<IEnumerable<Asistencia>> ObtenerAsistenciasPorAlumno(int idAlumno);
-    Task<IEnumerable<Asistencia>> ObtenerAsistenciasPorGradoGrupo(int grado, string grupo);
+    public interface IAsistenciaRepository
+    {
+        Task RegistrarAsistencia(int IdMatriculaAlumno, int IdMatriculaMaestro);
+        Task<List<asistencia>> ObtenerAsistenciasPorMaestro(int idMatriculaMaestro);
+        Task<List<asistencia>> ObtenerAsistenciasPorAlumno(int idMatriculaAlumno);
+        Task<List<asistencia>> ObtenerAsistenciasPorGradoYGrupo(string grado, string grupo);
+    }
 }

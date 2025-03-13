@@ -1,31 +1,22 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System;
 
-[Table("Asistencias")]
-public class Asistencia
+[Table("asistencia")]
+public class asistencia
 {
     [Key]
-    [Column("id_asistencia")]
-    public int? Id { get; set; }
+    public int idAsistencia { get; set; }
 
-    [Required]
-    [Column("id_sesion")]
-    public int IdSesion { get; set; }
+    public int idMatriculaAlumno { get; set; }
+    public int idMatriculaMaestro { get; set; }
 
-    [Required]
-    [Column("id_alumno")]
-    public int IdAlumno { get; set; }
+    public DateTime fecha { get; set; } = DateTime.Now;
+    public string? estado { get; set; }
 
-    [Required]
-    [Column("fecha_registro")]
-    public DateTime? FechaRegistro { get; set; } = DateTime.Now;
+    [ForeignKey("idMatriculaAlumno")]
+    public alumno? Alumno { get; set; }
 
-    // Relaciones
-    [ForeignKey("IdSesion")]
-    public Sesion? Sesion { get; set; }
-
-    [ForeignKey("IdAlumno")]
-    public Usuario? Alumno { get; set; }
+    [ForeignKey("idMatriculaMaestro")]
+    public maestro? Maestro { get; set; }
 }
-

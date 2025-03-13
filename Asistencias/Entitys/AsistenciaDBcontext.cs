@@ -2,17 +2,12 @@
 
 namespace Asistencias.Entitys
 {
-    public class AsistenciaContext : DbContext
+    public class AsistenciaDbContext : DbContext
     {
-        public DbSet<Usuario> Usuarios { get; set; }
-        public DbSet<Sesion> Sesiones { get; set; }
-        public DbSet<Asistencia> Asistencias { get; set; }
+        public AsistenciaDbContext(DbContextOptions<AsistenciaDbContext> options) : base(options) { }
 
-        public AsistenciaContext(DbContextOptions<AsistenciaContext> options) : base(options) { }
-
-        internal async Task SaveChangesAsync()
-        {
-            throw new NotImplementedException();
-        }
+        public DbSet<alumno> Alumnos { get; set; }
+        public DbSet<maestro> Maestros { get; set; }
+        public DbSet<asistencia> Asistencias { get; set; }
     }
 }

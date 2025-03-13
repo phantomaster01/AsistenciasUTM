@@ -1,4 +1,5 @@
 using Asistencias.Entitys;
+using Asistencias.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,13 +11,13 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<AsistenciaContext>(options =>
+builder.Services.AddDbContext<AsistenciaDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("cadenaSQL")));
 
 
 builder.Services.AddScoped<IAsistenciaRepository, AsistenciaRepository>();
-builder.Services.AddScoped<ISesionRepository, SesionRepository>();
-builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+builder.Services.AddScoped<IMaestroRepository, MaestroRepository>();
+builder.Services.AddScoped<IAlumnoRepository, AlumnoRepository>();
 
 
 builder.Services.AddCors(options => options.AddPolicy("AllowWebapp",

@@ -5,44 +5,63 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-public class AsistenciaRepository : IAsistenciaRepository
+namespace Asistencias.Repositories
 {
-    private readonly AsistenciaContext _context;
-
-    public AsistenciaRepository(AsistenciaContext context)
+    public class AsistenciaRepository : IAsistenciaRepository
     {
-        _context = context;
-    }
+        private readonly AsistenciaDbContext _context;
 
-    public async Task RegistrarAsistencia(Asistencia asistencia)
-    {
-        _context.Asistencias.Add(asistencia);
-        await _context.SaveChangesAsync();
-    }
+        public AsistenciaRepository(AsistenciaDbContext context)
+        {
+            _context = context;
+        }
+
+        public async Task RegistrarAsistencia(int IdMatriculaAlumno, int IdMatriculaMaestro)
+        {
+            var alumno = await _context.Alumnos.FindAsync(IdMatriculaAlumno);
+            var maestro = await _context.Maestros.FindAsync(IdMatriculaMaestro);
+
+            if (alumno == null || maestro == null)
+            {
+                throw new Exception("Alumno o Maestro no encontrado");
+            }
+
+            var Asistencia = new asistencia
+            {
+                idMatriculaAlumno = IdMatriculaAlumno,
+                idMatriculaMaestro = IdMatriculaMaestro,
+                fecha = DateTime.Now,
+                estado = "presente"  
+            };
+
+            _context.Asistencias.Add(Asistencia);
+            await _context.SaveChangesAsync();
+        }
 
 
-    public async Task<IEnumerable<Asistencia>> ObtenerAsistenciasPorMaestro(int idMaestro)
-    {
-        return await _context.Asistencias
-            .Include(a => a.Sesion)
-            .ThenInclude(s => s.Maestro)
-            .Where(a => a.Sesion.IdMaestro == idMaestro)
-            .ToListAsync();
-    }
+        public async Task<List<asistencia>> ObtenerAsistenciasPorMaestro(int IdMatriculaMaestro)
+        {
+            return await _context.Asistencias
+                .Include(a => a.Alumno)
+                .Where(a => a.idMatriculaMaestro == IdMatriculaMaestro)
+                .ToListAsync();
+        }
 
-    public async Task<IEnumerable<Asistencia>> ObtenerAsistenciasPorAlumno(int idAlumno)
-    {
-        return await _context.Asistencias
-            .Include(a => a.Alumno)
-            .Where(a => a.IdAlumno == idAlumno)
-            .ToListAsync();
-    }
+        public async Task<List<asistencia>> ObtenerAsistenciasPorAlumno(int IdMatriculaAlumno)
+        {
+            return await _context.Asistencias
+                .Include(a => a.Maestro)
+                .Where(a => a.idMatriculaAlumno == IdMatriculaAlumno)
+                .ToListAsync();
+        }
 
-    public async Task<IEnumerable<Asistencia>> ObtenerAsistenciasPorGradoGrupo(int grado, string grupo)
-    {
-        return await _context.Asistencias
-            .Include(a => a.Alumno)
-            .Where(a => a.Alumno.Grado == grado && a.Alumno.Grupo == grupo)
-            .ToListAsync();
+        public async Task<List<asistencia>> ObtenerAsistenciasPorGradoYGrupo(string grado, string grupo)
+        {
+            return await _context.Asistencias
+                .Include(a => a.Alumno)
+                .Include(a => a.Maestro)
+                .Where(a => a.Alumno.grado == grado && a.Alumno.grupo == grupo)
+                .ToListAsync();
+        }
     }
 }

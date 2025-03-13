@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Asistencias")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ece81a59a96a1d1d0156a9e3e230aed5c70b302")]
 [assembly: System.Reflection.AssemblyProductAttribute("Asistencias")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Asistencias")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

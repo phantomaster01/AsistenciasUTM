@@ -1,58 +1,63 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Asistencias.Repositories;
+using Asistencias.DTOs;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Threading.Tasks;
 
 namespace Asistencias.Controllers
 {
+    [Route("api/[controller]")]
     [ApiController]
-    [Route("api/asistencias")]
-    public class AsistenciasController : ControllerBase
+    public class AsistenciaController : ControllerBase
     {
         private readonly IAsistenciaRepository _asistenciaRepository;
-        private readonly ISesionRepository _sesionRepository;  // Se agrega la dependencia de Sesion
-        private readonly IUsuarioRepository _usuarioRepository;  // Se agrega la dependencia de Usuario
 
-        public AsistenciasController(IAsistenciaRepository asistenciaRepository,
-                                     ISesionRepository sesionRepository,
-                                     IUsuarioRepository usuarioRepository)
+        public AsistenciaController(IAsistenciaRepository asistenciaRepository)
         {
             _asistenciaRepository = asistenciaRepository;
-            _sesionRepository = sesionRepository;  // Asignación correcta
-            _usuarioRepository = usuarioRepository;  // Asignación correcta
         }
 
         [HttpPost("registrar")]
-        public async Task<IActionResult> RegistrarAsistencia([FromBody] Asistencia asistencia)
+        public async Task<IActionResult> RegistrarAsistencia([FromBody] AsistenciaRequest asistenciaRequest)
         {
-            // Verificamos que la sesión y el alumno existan
-            var sesion = await _sesionRepository.ObtenerSesionPorId(asistencia.IdSesion);
-            var alumno = await _usuarioRepository.ObtenerUsuarioPorId(asistencia.IdAlumno);
+            if (asistenciaRequest == null || asistenciaRequest.idMatriculaAlumno <= 0 || asistenciaRequest.idMatriculaMaestro <= 0)
+            {
+                return BadRequest(new { message = "Datos de asistencia inválidos" });
+            }
 
-            if (sesion == null || alumno == null)
-                return BadRequest("Sesión o alumno no encontrados");
+            try
+            {
+                await _asistenciaRepository.RegistrarAsistencia(
+                    asistenciaRequest.idMatriculaAlumno,
+                    asistenciaRequest.idMatriculaMaestro
+                );
 
-            // Registramos la asistencia
-            await _asistenciaRepository.RegistrarAsistencia(asistencia);
-            return Ok(new { mensaje = "Asistencia registrada" });
+                return Ok(new { message = "Asistencia registrada correctamente" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Error interno del servidor", error = ex.Message });
+            }
         }
 
-        [HttpGet("maestro/{idMaestro}")]
-        public async Task<IActionResult> ObtenerAsistenciasPorMaestro(int idMaestro)
+        [HttpGet("maestro/{maestroId}")]
+        public async Task<ActionResult> ObtenerAsistenciasPorMaestro(int maestroId)
         {
-            var asistencias = await _asistenciaRepository.ObtenerAsistenciasPorMaestro(idMaestro);
+            var asistencias = await _asistenciaRepository.ObtenerAsistenciasPorMaestro(maestroId);
             return Ok(asistencias);
         }
 
-        [HttpGet("alumno/{idAlumno}")]
-        public async Task<IActionResult> ObtenerAsistenciasPorAlumno(int idAlumno)
+        [HttpGet("alumno/{idMatriculaAlumno}")]
+        public async Task<ActionResult> ObtenerAsistenciasPorAlumno(int idMatriculaAlumno)
         {
-            var asistencias = await _asistenciaRepository.ObtenerAsistenciasPorAlumno(idAlumno);
+            var asistencias = await _asistenciaRepository.ObtenerAsistenciasPorAlumno(idMatriculaAlumno);
             return Ok(asistencias);
         }
 
         [HttpGet("grado/{grado}/grupo/{grupo}")]
-        public async Task<IActionResult> ObtenerAsistenciasPorGradoGrupo(int grado, string grupo)
+        public async Task<ActionResult> ObtenerAsistenciasPorGradoYGrupo(string grado, string grupo)
         {
-            var asistencias = await _asistenciaRepository.ObtenerAsistenciasPorGradoGrupo(grado, grupo);
+            var asistencias = await _asistenciaRepository.ObtenerAsistenciasPorGradoYGrupo(grado, grupo);
             return Ok(asistencias);
         }
     }
